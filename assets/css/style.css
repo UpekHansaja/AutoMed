@@ -109,14 +109,30 @@ header {
   transition: 0.3s;
 }
 
-.buttonHolder button:hover{
-  background-color: var(--blue-color) !important;
-  color: var(--white-color);
-  cursor: pointer;
-  transition: .3s;
-}
-
 .buttonHolder button:nth-child(2) {
   margin-left: 20px;
 }
 
+.buttonHolder button:hover {
+  background-color: var(--blue-color) !important;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navigationHolder {
+  height: 80px;
+}
+
+.navigationHolder a i{
+  font-size: x-large;
+  font-weight: bold;
+  color: var(--white-color);
+  transition-duration: .3s;
+}
+
+.navigationHolder a i:hover{
+  color: var(--blue-color);
+  transition-duration: .3s;
+  margin-top: -10px;
+}
