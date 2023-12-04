@@ -73,7 +73,7 @@ header {
   position: absolute;
 }
 
-.rightHeroInner{
+.rightHeroInner {
   width: 25vw;
   display: flex;
   flex-direction: column;
@@ -90,10 +90,33 @@ header {
   margin-top: -20px;
 }
 
-.rightHeroInner p{
+.rightHeroInner p {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
   font-weight: lighter;
   color: var(--white-color);
 }
+
+.buttonHolder button {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 25px 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  border: none;
+  border-radius: 70px;
+  transition: 0.3s;
+}
+
+.buttonHolder button:hover{
+  background-color: var(--blue-color) !important;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.buttonHolder button:nth-child(2) {
+  margin-left: 20px;
+}
+
