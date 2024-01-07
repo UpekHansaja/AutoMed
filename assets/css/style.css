@@ -55,8 +55,10 @@ header {
 }
 
 .leftHeroSide {
-  width: 80%;
+  width: 100%;
   height: 100%;
+  /* background-color: red; */
+  z-index: -2;
 }
 
 .rightHeroSide {
@@ -68,6 +70,7 @@ header {
   width: 90%;
   height: 100%;
   object-fit: contain;
+  z-index: -2;
 }
 
 .rightHeroContent {
@@ -137,3 +140,62 @@ header {
   transition-duration: .3s;
   margin-top: -10px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header{
+    width: 100%;
+  }
+  .headerItems a{
+    display: none;
+  }
+  .headerItems{
+    width: 100%;
+    justify-content: space-around;
+  }
+  .logoBgImg{
+    display: none;
+  }
+  .smdFlex-direction{
+    flex-direction: column;
+  }
+  .homeLeftImg{
+    width: 50%;
+  }
+  .homeRightBgImg{
+    display: none;
+  }
+  .rightHeroContent{
+    position: relative;
+    padding: 10px 20px;
+    /* background-color: red; */
+    width: 100vw;
+  }
+  .rightHeroInner{
+    background-color: var(--orange-color);
+    width: 90vw;
+    padding: 30px 20px;
+  }
+  .heroHeading{
+    font-size: 40px;
+  }
+  .decreaseMarginTop{
+    margin-top: 0px;
+  }
+  .buttonHolder button:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
